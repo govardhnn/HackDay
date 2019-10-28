@@ -1,26 +1,20 @@
 from random import *
-num=int(input("Enter the number of flips-(odd number)\t"))
-i=0
-j=0
-if(num==0):
-    print("Invalid input: input must be >0 and odd")
-elif(num%2==1):
-    while(num>0):
-        val=randint(0,1)
-        if(val%2==0):
-            print("\nHEADS")
-            i+=1
-        else:
-            print("\nTAILS")
-            j+=1
-        num-=1
-
-    if(j>i):
-        print("\nTAILS WINS")
+def flipacoin():
+    print("-----------Going to flip a coin------------------")
+    choice=input("Enter your choice - (HEADS/TAILS)")
+    flag=randint(0,1)
+    F=-1
+    if choice=='HEADS':
+        F=1
+    elif choice=='TAILS':
+        F=0
     else:
-        print("\nHEADS WINS")
-else:
-    print("Enter an odd number only")
+        print('invalid input')
+    if flag==F:
+        print('You won!')
+    else:
+        print("Better luck next time")
+flipacoin()
 
     
 
