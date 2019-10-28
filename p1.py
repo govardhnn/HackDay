@@ -18,6 +18,7 @@ for i in range(ln):
     '''
 '''print(type(True))
 print(0B1101)'''
+#why did you comment the above
 i=(1,10,True)
 for l in i:
     while(True):
@@ -27,5 +28,3 @@ for l in i:
         elif(type(i)==bool):
             print(i)
             exit
-        
-
